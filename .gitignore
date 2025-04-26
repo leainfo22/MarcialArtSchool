@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/MarcialArtSchool/.vs
+/MarcialArtSchool/.vs/MarcialArtSchool/CopilotIndices/17.13.433.20974/CodeChunks.db
+/MarcialArtSchool/MarcialArtSchool/bin/Debug/net8.0
+/MarcialArtSchool/MarcialArtSchool/obj
+/MarcialArtSchool/MartialArtSchool.Infrastructure/bin/Debug/net8.0
+/MarcialArtSchool/MartialArtSchool.Infrastructure/obj/Debug/net8.0
+/MarcialArtSchool/MartialArtSchool.Infrastructure/obj
