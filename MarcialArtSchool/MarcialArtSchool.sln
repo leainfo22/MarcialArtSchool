@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarcialArtSchool", "MarcialArtSchool\MarcialArtSchool.csproj", "{31F1BABA-16C8-4F73-B19B-F4F00D1C3663}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MartialArtSchool.Infrastructure", "MartialArtSchool.Infrastructure\MartialArtSchool.Infrastructure.csproj", "{4D54F1AF-5A77-4054-ABC7-0801AAD371B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31F1BABA-16C8-4F73-B19B-F4F00D1C3663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F1BABA-16C8-4F73-B19B-F4F00D1C3663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F1BABA-16C8-4F73-B19B-F4F00D1C3663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F1BABA-16C8-4F73-B19B-F4F00D1C3663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D54F1AF-5A77-4054-ABC7-0801AAD371B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D54F1AF-5A77-4054-ABC7-0801AAD371B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D54F1AF-5A77-4054-ABC7-0801AAD371B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D54F1AF-5A77-4054-ABC7-0801AAD371B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D49D5C4E-548C-4CFE-A670-9E761844DE9B}
+	EndGlobalSection
+EndGlobal
