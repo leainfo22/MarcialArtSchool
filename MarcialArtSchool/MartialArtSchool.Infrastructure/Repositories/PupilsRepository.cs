@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MarcialArtSchool.DTO.Pupils;
+using MarcialArtSchool.Core.RepositoryContracts;
 
 namespace MartialArtSchool.Infrastructure.Repositories;
 internal class PupilsRepository : IPupilsRepository
@@ -12,7 +9,7 @@ internal class PupilsRepository : IPupilsRepository
     {
         _pupils = new List<Pupils>();
     }
-    public Task<Pupils> GetPupilByIdAsync(int id)
+    public Task<Pupils> GetPupilByIdAsync(Guid id)
     {
         var pupil = _pupils.FirstOrDefault(p => p.Id == id);
         return Task.FromResult(pupil);

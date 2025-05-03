@@ -1,15 +1,9 @@
-﻿using MarcialArtSchool.Core.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using MarcialArtSchool.DTO.Pupils;
 namespace MarcialArtSchool.Core.RepositoryContracts;
 
-interface IPupilsRepository
+public interface IPupilsRepository
 {
-    public Task<Pupils> GetPupilByIdAsync(int id);
+    public Task<Pupils> GetPupilByIdAsync(Guid id);
     public Task<List<Pupils>> GetAllPupilsAsync();
     public Task AddPupilAsync(Pupils pupil);
 }
