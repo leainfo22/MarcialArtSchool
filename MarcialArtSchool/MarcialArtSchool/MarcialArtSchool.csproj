@@ -7,11 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MarcialArtSchool.Core\MarcialArtSchool.Core.csproj" />
     <ProjectReference Include="..\MartialArtSchool.Infrastructure\MartialArtSchool.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Models\" />
     <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="5.3.5" />
   </ItemGroup>
 
 </Project>

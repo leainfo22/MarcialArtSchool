@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarcialArtSchool", "Marcial
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MartialArtSchool.Infrastructure", "MartialArtSchool.Infrastructure\MartialArtSchool.Infrastructure.csproj", "{4D54F1AF-5A77-4054-ABC7-0801AAD371B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarcialArtSchool.Core", "MarcialArtSchool.Core\MarcialArtSchool.Core.csproj", "{13C49CE5-456F-454F-AB3D-F4375DE4E14E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4D54F1AF-5A77-4054-ABC7-0801AAD371B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D54F1AF-5A77-4054-ABC7-0801AAD371B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D54F1AF-5A77-4054-ABC7-0801AAD371B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13C49CE5-456F-454F-AB3D-F4375DE4E14E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C49CE5-456F-454F-AB3D-F4375DE4E14E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C49CE5-456F-454F-AB3D-F4375DE4E14E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C49CE5-456F-454F-AB3D-F4375DE4E14E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
