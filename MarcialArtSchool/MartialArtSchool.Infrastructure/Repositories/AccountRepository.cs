@@ -21,7 +21,7 @@ namespace MartialArtSchool.Infrastructure.Repositories
         public async Task<bool> GetPupilByUserPass(string user, string password) 
         {
             var hash = Hash.HashPasswordWithSalt(password);
-            string query = $"EXEC @UserExistsResult = dbo.CheckUserExistsByUsernameAndPassword @Username = '{user}', @UserPassword = '{hash}'";
+            string query = $"EXEC dbo.CheckUserExistsByUsernameAndPassword @Username = '{user}', @UserPassword = '{hash}'";
             int rowCountAffected = await _dbContext.DbConnection.ExecuteAsync(query);
 
             if (rowCountAffected > 0)

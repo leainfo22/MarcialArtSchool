@@ -36,7 +36,7 @@ namespace MarcialArtSchool.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(LoginDTO? loginDTO)
+        public async Task<IActionResult> Login(LoginDTO loginDTO)
         {
             if (!ModelState.IsValid)
             {
@@ -52,7 +52,6 @@ namespace MarcialArtSchool.Controllers
 
             ModelState.AddModelError("Login", "Inalid email or password");
             return View(loginDTO);
-            return View();
 
         }
 
