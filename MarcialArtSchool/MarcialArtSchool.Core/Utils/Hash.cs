@@ -4,35 +4,27 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MarcialArtSchool.Core.Utils
 {
     public class Hash
     {
-        public static string HashPasswordWithSalt(string password, int saltSize = 16)
+        public static string HashPasswordWithSalt(string password)
         {
-            // Generate a random salt
-            byte[] saltBytes = new byte[saltSize];
-            using (var rng = RandomNumberGenerator.Create())
+            using (SHA256 sha256 = SHA256.Create())
             {
-                rng.GetBytes(saltBytes);
+                byte[] inputBytes = Encoding.UTF8.GetBytes(password);
+                byte[] hashBytes = sha256.ComputeHash(inputBytes);
+
+                // Convert the byte array to a hexadecimal string
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < hashBytes.Length; i++)
+                {
+                    sb.Append(hashBytes[i].ToString("x2")); // "x2" formats as lowercase hex with leading zero if needed
+                }
+                return sb.ToString();
             }
-            string salt = Convert.ToBase64String(saltBytes);
-
-            // Hash the password with the salt
-            byte[] passwordBytes = Encoding.UTF8.GetBytes(password);
-            byte[] saltedPasswordBytes = new byte[saltBytes.Length + passwordBytes.Length];
-            Buffer.BlockCopy(saltBytes, 0, saltedPasswordBytes, 0, saltBytes.Length);
-            Buffer.BlockCopy(passwordBytes, 0, saltedPasswordBytes, saltBytes.Length, passwordBytes.Length);
-
-            byte[] hashBytes;
-            using (var sha256 = SHA256.Create())
-            {
-                hashBytes = sha256.ComputeHash(saltedPasswordBytes);
-            }
-            string hash = Convert.ToBase64String(hashBytes);
-
-            return  hash;
         }
     }
 }

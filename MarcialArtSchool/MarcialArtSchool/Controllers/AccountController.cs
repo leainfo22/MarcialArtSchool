@@ -43,7 +43,7 @@ namespace MarcialArtSchool.Controllers
                 ViewBag.Errors = ModelState.Values.SelectMany(temp => temp.Errors).Select(temp => temp.ErrorMessage);
                 return View(loginDTO);
             }
-            var result = await _accountRepository.GetPupilByUserPass(loginDTO.Email, loginDTO.Password);
+            var result = await _accountRepository.GetPupilByUserPass(loginDTO);
 
             if (result)
             {
