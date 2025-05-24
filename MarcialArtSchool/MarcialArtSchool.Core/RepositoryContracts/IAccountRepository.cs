@@ -9,8 +9,13 @@ using System.Threading.Tasks;
 namespace MarcialArtSchool.Core.RepositoryContracts;
 public interface IAccountRepository
 {
-    public Task<bool> GetPupilByUserPass(LoginDTO loginDTO);
+    public Task<bool> CheckPupilByUserPass(LoginDTO loginDTO);
     public Task<bool> AddPupilCredentials(LoginDTO loginDTO);
+    public Task<Pupils> GetPupilByUserPass(LoginDTO loginDTO);
+    public Task<Pupils?> Login(LoginDTO loginRequest);
+    
+
+    
 
 
 }

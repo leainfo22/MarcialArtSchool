@@ -1,1 +1,60 @@
-﻿
+﻿<style>
+
+    .main-navigation {
+        display: flex;
+        justify-content: space-between; /* Logo on the left, navigation on the right */
+        align-items: center; /* Vertically center items */
+        padding: 1rem;
+        background-color: #f0f0f0; /* Example background color */
+    }
+
+    .logo a {
+        /* Style the logo link if needed */
+    }
+
+    .logo img {
+        /* Style the logo image */
+        height: 30px; /* Example height */
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    nav li {
+        margin-right: 1rem; /* Spacing between menu items */
+    }
+
+    nav a {
+        color: #333; /* Example link color */
+        text-decoration: none;
+        font-size: 1rem;
+        /* Add Puma's font styles here */
+    }
+
+        nav a:hover {
+            /* Add hover effect, e.g., underline or color change */
+        }
+</style>
+
+
+<div class="main-navigation">
+    <div class="logo">
+        <a href="/">
+            <img src="path/to/puma-logo.svg" alt="Puma Logo">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Outlet</a></li>
+        </ul>
+    </nav>
+</div>
